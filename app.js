@@ -58,6 +58,6 @@ function sortearAmigo() {
 
 // Implementa una función para mostrar los resultados
 function mostrarResultados(amigoSorteado) {
-    lista.innerHTML = "";
+    elementoListaAmigos.innerHTML = "";
     resultado.innerHTML = `El amigo secreto sorteado es: ${amigoSorteado}`;
 }
