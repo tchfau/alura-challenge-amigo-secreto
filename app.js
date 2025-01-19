@@ -21,7 +21,6 @@ function agregarAmigo() {
     }
     
     elementoAmigo.value = "";
-    console.log(amigos);
 }
 
 // Implementa una función para actualizar la lista de amigos
@@ -29,9 +28,8 @@ function actualizarListaAmigos(amigos) {
     let nuevoElementoLi = document.createElement('li');
     for (let i = 0; i < amigos.length; i++) {
         nuevoElementoLi.innerText = amigos[i];
-        console.log(amigos[i]);
     }
-    console.log(nuevoElementoLi);
+
     elementoListaAmigos.append(nuevoElementoLi);
 }
 
