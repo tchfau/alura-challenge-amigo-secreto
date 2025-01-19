@@ -6,3 +6,19 @@ let elementoAmigo = document.getElementById('amigo');
 let elementoListaAmigos = document.getElementById('listaAmigos');
 let elementoListaResultados = document.getElementById('resultado'); 
 
+// Implementa una función para agregar amigos
+function agregarAmigo() {
+    const amigo = elementoAmigo.value;
+
+    if (amigo === "") {
+        alert("Por favor, inserte un nombre");
+    }
+
+    if (amigo && !amigos.includes(amigo)) {
+        amigos.push(amigo);
+        actualizarListaAmigos(amigos);
+    }
+    
+    elementoAmigo.value = "";
+    console.log(amigos);
+}
